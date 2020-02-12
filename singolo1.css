@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+* {
+    margin: 0 auto;    
+    padding: 0;
+    width: 1200px;
+    font-family: 'Lato', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+.menu {
+    height: 89px;
+    border-bottom: 6px solid #323746;
+    background-color: #2d303a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+.logo {
+}
+.menu__list {
+    display: flex;
+    width: 50%;
+}
+.menu__item {
+    display: block;
+}
+.menu__item-link {
+    color: #fff;
+}
+.menu__item-link:before {
+    content: "\2022";
+    color: #494e62;
+    display: inline-block;
+    width: 1em;
+}
+.menu__item-link:hover {
+    color: #f06c64;
+    cursor: pointer;
+}
+
+.slider__wrapper {
+    background: #f06c64;
+    height: 600px;
+    /* margin-bottom: 120px; */
+    border-bottom: 6px solid #ea676b;
+    padding: 54px 112px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider__img-1 {
+    width: 218px;
+    height: 460px;
+}
+.slider__img-2 {
+    width: 460px;
+    height: 218px;
+}
+
+.services__wrapper {
+    height: 500px;
+    background: #f2f2f2;
+    padding: 70px 45px;
+    box-sizing: border-box;
+    color: #666d89;
+    margin-bottom: 120px;
+}
+.services__list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.services__title,
+.services__subtitle {
+    padding-bottom: 35px;
+    line-height: 1.2;
+}
+.services__icon-wrapper {
+    margin-right: 20px;
+}
+.services__list {
+    height: 85px;
+    border: 1px solid orangered;
+    width: 25%;
+    padding: 12px;
+    margin: 10px 10px 10px 0;
+    display: flex;
+}
+.services__icon {
+    width: 34px;
+    height: 34px;
+    display: table-cell;
+    padding: 25px;
+    border: solid 3px #666d89;
+    border-radius: 50px;    
+}
+.services__name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}    
+
+
