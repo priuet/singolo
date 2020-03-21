@@ -2,44 +2,47 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <title>Singolo</title>
-  <meta name="description" content="Singolo">
-  <meta name="author" content="SitePoint">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<title>Singolo</title>
+	<meta name="description" content="Singolo">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <div class="menu">
-            <h1 class="logo"><a href="#" class="menu__logo">Singolo</a></h1>
-            <nav>
-            <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__item-link">home</a></li>
-                <li class="menu__item"><a href="#" class="menu__item-link">services</a></li>
-                <li class="menu__item"><a href="#" class="menu__item-link">portfolio</a></li>
-                <li class="menu__item"><a href="#" class="menu__item-link">about</a></li>
-                <li class="menu__item"><a href="#" class="menu__item-link">contact</a></li>
-            </ul>
-        </nav>
+        <div class="menu__wrapper">
+			<h1 class="menu__logo">Singolo</h1>
+			<nav class="menu">
+				<a class="menu__link" href="#slider">HOME</a>
+				<a class="menu__link menu__link_active" href="#services">SERVICES</a>
+				<a class="menu__link" href="#portfolio">PORTFOLIO</a>
+				<a class="menu__link" href="#about">ABOUT</a>
+				<a class="menu__link" href="#contact">CONTACT</a>
+			</nav>
         </div>
     </header>
 
     <main>
-        <section class="slider">
+        <section class="slider_section" id="slider">
             <div class="slider__wrapper">
-                <button class="slider__arrow slider__arrow-left"></button>
-                <img src="assets/images/iPhoneVer.png" alt="" class="slider__img-main" width="240" height="483">
-                <img src="assets/images/iPhoneHor.png" alt="" class="slider__img-main" width="484" height="240">
-                <button class="slider__arrow slider__arrow-right"></button>
-            </div>
+				<div class="slider">
+					<div class="item">
+						<img src="assets/images/iPhoneHorizontal.png" alt="Первый слайд">
+					</div>
+		
+					<div class="item">
+						<img src="assets/images/Slide-2.png" alt="Второй слайд">
+					</div>
+		
+					<button class="prev slider__arrow slider__arrow-left" onclick="minusSlide()"></button>
+					<button class="next slider__arrow slider__arrow-right" onclick="plusSlide()"></button>
+				</div>
         </section>
 
-        <section class="services">
+
+        <section class="services" id = "services">
             <div class="services__wrapper">
                 <div class="services__heading">
                     <h2 class="services__title">Our Services</h2>
@@ -86,97 +89,53 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
 			<div class="portfolio__wrapper">
                 <div class="services__heading">
             		<h2 class="portfolio__title">Portfolio</h2>
 					<p class="portfolio__subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 				</div>
 				<div class="row">
-					<ul class="portfolio__links">
-						<li><a href="#">All</a></li>
-						<li><a href="#">Web Design</a></li>
-						<li><a href="#">Graphic Design</a></li>
-						<li><a href="#">Artwork</a></li>
+					<ul class="portfolio__links"  id = "tags">
+						<a href="javascript:void(0)" onclick="func();">
+							<li>
+								<button class="gallery-selector__button">All</button>
+							</li>
+						</a>
+						<a href="javascript:void(0)" onclick="func();">
+							<li>
+								<button class="gallery-selector__button">Web Design</button>
+							</li>
+						</a>
+						<a href="javascript:void(0)" onclick="func();">
+							<li>
+								<button class="gallery-selector__button">Graphic Design</button>
+							</li>
+						</a>
+						<a href="javascript:void(0)" onclick="func();">
+							<li>
+								<button class="gallery-selector__button">Artwork</button>
+							</li>
+						</a>
 					</ul>
 				</div>
-				<div class="portfolio__items">
-					<div class="portfolio__image">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-01.jpg" alt="Portfolio 01">
-						</a>
-					</div>
-					<div class="portfolio__image">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-02.jpg" alt="Portfolio 02">
-						</a>
-                    </div>
-					<div class="portfolio__image img4">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-03.jpg" alt="Portfolio 03">
-						</a>
-					</div>
-					<div class="portfolio__image img4">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-04.jpg" alt="Portfolio 04">
-						</a>
-                    </div>					
-                    <div class="portfolio__image">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-05.jpg" alt="Portfolio 05">
-						</a>
-					</div>
-					<div class="portfolio__image">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-06.jpg" alt="Portfolio 06">
-						</a>
-                    </div>					
-                    <div class="portfolio__image img4">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-07.jpg" alt="Portfolio 07">
-						</a>
-					</div>
-					<div class="portfolio__image img4">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-08.jpg" alt="Portfolio 08">
-						</a>
-                    </div>					
-                    <div class="portfolio__image">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-09.jpg" alt="Portfolio 09">
-						</a>
-					</div>
-					<div class="portfolio__image">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-10.jpg" alt="Portfolio 10">
-						</a>
-                    </div>					
-                    <div class="portfolio__image img4">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-11.jpg" alt="Portfolio 11">
-						</a>
-					</div>
-					<div class="portfolio__image img4">
-						<a href="#">
-							<span class="overlay"></span>
-							<img src="assets/images/portfolio-img-12.jpg" alt="Portfolio 12">
-						</a>
-                    </div>
+				<div class="portfolio__items" id="pictures">
+					<img src="assets/images/portfolio-img-01.jpg" alt="Portfolio 01" class="portfolio_img" height="187" width="220">
+					<img src="assets/images/portfolio-img-02.jpg" alt="Portfolio 02"  class="portfolio_img"  height="187" width="220">
+					<img src="assets/images/portfolio-img-03.jpg" alt="Portfolio 03" class="portfolio_img img4" height="187" width="220">
+					<img src="assets/images/portfolio-img-04.jpg" alt="Portfolio 04" class="portfolio_img img4" height="187" width="220">
+					<img src="assets/images/portfolio-img-05.jpg" alt="Portfolio 05" class="portfolio_img">
+					<img src="assets/images/portfolio-img-06.jpg" alt="Portfolio 06" class="portfolio_img" height="187" width="220">
+					<img src="assets/images/portfolio-img-07.jpg" alt="Portfolio 07" class="portfolio_img img4" height="187" width="220">
+					<img src="assets/images/portfolio-img-08.jpg" alt="Portfolio 08" class="portfolio_img img4" height="187" width="220">
+					<img src="assets/images/portfolio-img-09.jpg" alt="Portfolio 09"  class="portfolio_img" height="187" width="220">
+					<img src="assets/images/portfolio-img-10.jpg" alt="Portfolio 10"  class="portfolio_img" height="187" width="220">
+					<img src="assets/images/portfolio-img-11.jpg" alt="Portfolio 11" class="portfolio_img img4" height="187" width="220">
+					<img src="assets/images/portfolio-img-12.jpg" alt="Portfolio 12" class="portfolio_img img4" height="187" width="220">
 			    </div>
 		</section><!-- portfolio -->
         
-        <section class="about-us">
+        <section class="about-us" id="about">
 			<div class="about-us__wrapper">
 				<div class="about-us__heading">
 					<h2 class="portfolio__title">About Us</h2>
@@ -232,20 +191,33 @@
 			</div>
 		</section><!-- about-us -->
 		
-		<section class="get-a-quote">
+		<section class="get-a-quote" id="contact">
 			<div class="quote__wrapper">
 				<div class="row">
 					<h2 class="quote__heading">Get a Quote</h2>
 					<p class="quote__subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 				</div>
-				<div class="form__wrapper">
-					<form class="form_quote">
-						<input class="form_input" type="text" name="name" placeholder="Name (Required)">
-						<input class="form_input" type="email" name="email" placeholder="Email (Required)">
-						<input class="form_input" type="text" name="subject" placeholder="Subject">
-						<textarea class="form_input form_textarea" name="description" placeholder="Describe your project in detail..."></textarea>
-						<button class="form_button" type="submit">Submit</button>
-					</form>
+					<div class="form__wrapper">
+						<form onsubmit="return false;" name="form" class="form_quote">
+							<input required type="text" name="name"  placeholder="Name (Required)" class="form_input"/>
+							<input required type="email"  name="email" placeholder="Email (Required)" class="form_input"/>
+							<input type="text" id="subject" name="subject" placeholder="Subject" class="form_input"/>
+							<textarea placeholder="Describe your problem in detail..." name="describe" id="describe"  class="form_textarea" width="619px"></textarea>
+							<p class="submit">
+								<input type="submit"  class="form_button" id="submit" value="Submit" onclick="validate_form( );"/>
+							</p>
+							<div id="popup" class="hidden_message">
+								<div id="message">
+								<p> Письмо отправлено <br>
+								Тема: <span id="topic"></span><br>
+								Описание: <span id="description"></span>
+								</p>
+								<br>
+								<button id="close_button"  class="form_button" onclick="location.reload();">Закрыть окно</button>
+							</div>
+						</form>
+					</div>
+<!-------------- contact information ----------->				
 					<div class="contact_info">
 						<h4 class="contact_info-title">Contact Information</h4>
 						<p class="contact_info-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
@@ -260,7 +232,8 @@
 							</p>
 							<p>
 								<span class="contact_icon mail_icon"></span>
-								<a class="contact_text" href="mailto:info@singolo.com">info@singolo.com</a>							</p>
+								<a class="contact_text" href="mailto:info@singolo.com">info@singolo.com</a>
+							</p>
 						</ul>
 					</div>
 				</div>
@@ -278,5 +251,6 @@
 			</div>
 		</footer><!-- footer -->
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
