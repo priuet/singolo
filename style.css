@@ -661,19 +661,20 @@ footer a:hover {
 /*-------------------------FOOTER STYLES END-------------------*/
 
 /* ======---------------===MEDIA QUERIES=======-------------------======= */
-@media only screen and (max-width: 768px) and (min-width:375px) {
+@media only screen and (max-width: 768px) and (min-width: 375px) {
     .container {
         width: 100%;
         position: relative;
     }
     header {
-        height: 65px;
-        position: relative;
+        /* height: 65px;
+        position: relative; */
     }
     .menu__logo {
       align-items: center;
+      margin: 0 auto;
     }
-    nav,.menu {
+    .main-menu {
         display: none;
     }
     .menu__wrapper {
@@ -683,76 +684,129 @@ footer a:hover {
 
     .slider_section {
         width: 100%;
-        height: 246px;
-        top: 30px;
-        background-color: transparent;
+        height: auto;
     }
     .slider__wrapper {
-      height: 246px;
-      background-color: transparent;
-      border: none;
+      height: auto;
+      margin-bottom: 40px;
+    border: unset;
     }
     .slider, .item img {
         width: 100%;
-        height: 246px;
+        height: auto;
+        /* padding: 10px 0; */
     }
     .slider .prev, .slider .next {
-        top: 20%;
-        margin-top: 52px;
+        /* top: 20%;
+        margin-top: 52px; */
     }
     .slider__arrow-left {
-        margin-left: 15px;;
+        margin-left: 15px;
     }
     .slider__arrow-right {
-        margin-right: 20px;
+        margin-right: 15px;
     }
 
 
-
+    .services {
+        height: auto;
+    }
     .services__wrapper {
         width: 100%;
-        padding: 60px 40px;
+        height: auto;
+        padding-bottom: 10px;
     }
     .services__heading {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .services__list-wrapper {
-        margin-top: 20px;
+        height: auto;
     }
     .services__column {
         width: 100%;
-        margin: 0 20px;
+        margin: 0 10px;
+        height: auto;
+    }
+    .col-2 {
+        display: none;
     }
 
     .portfolio__wrapper {
-            width: 100%;
-            padding: 60px 40px;
-        }
-    
-
-
-
-
-
-
-
-    .contact-info {
-      width: 100%;
-      padding-bottom: 20px;
+        width: 100%;
+        height: fit-content;
+        padding: 40px;
     }
-    .input {
+    .portfolio {
+        height: fit-content;
+    }
+    .portfolio__items img,
+    img.portfolio__img {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us {
+        height: auto;
+    }
+    .about-us__wrapper {
+        width: 100%;
+        height: auto;
+        padding: 10px 30px;
+    }
+    .about-us__row {
+        flex-flow: column;
+    }
+    .about-us__card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .quote__wrapper {
+        padding: 32px;
+        width: 100%;
+        height: auto;
+    }
+    .row {
+        padding: 0 10px;
+        width: 80%;
+        height: auto;
+    }
+    .form__wrapper {
+        flex-direction: column;
+    }
+    .get-a-quote a, .get-a-quote {
+        width: 100%;
+        height: auto;
+    }
+    .form_quote {
+        width: 80%;
+        margin: 0 10px;
+    }
+    .form_button {
+        width: -webkit-fill-available;
+        margin-bottom: 15px;
+    }
+    .contact_info {
+        width: 80%;
+        padding: 20px 0;
+        margin: 0 10px;
+    }
+    input {
       min-width: 97%;
+    }
+    footer {
+        width: 100%;
     }
     .copyright {
       display: none;
     }
-    footer {
-        width: 100%;
-        height: 76px;
-        background-color: #2d303a;
-    }
     .smm_logo {
-    align-items: center;
-    padding: 0 20px;
+        padding: 0 10px;
     }
-  }
+    .footer_smm {
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+}
