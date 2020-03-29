@@ -103,6 +103,7 @@ header {
     letter-spacing: -0.035em;
     color: #fff;
     text-decoration: none;
+padding: 0 10px;
 }
 
 .menu__link:not(.menu__link_active):hover {
