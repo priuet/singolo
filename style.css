@@ -103,7 +103,7 @@ header {
     letter-spacing: -0.035em;
     color: #fff;
     text-decoration: none;
-padding: 0 10px;
+    padding: 0 10px;
 }
 
 .menu__link:not(.menu__link_active):hover {
@@ -665,7 +665,7 @@ footer a:hover {
 @media only screen and (max-width: 768px) and (min-width: 375px) {
     .container {
         width: 100%;
-        position: relative;
+        /* position: relative; */
     }
     header {
         /* height: 65px;
